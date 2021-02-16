@@ -1,0 +1,34 @@
+#Server
+server:
+  port: 8085
+
+#Swagger
+swagger:
+  host: localhost:8085
+
+# LOGGING
+logging:
+  file:
+  max-size: 128MB
+
+#Druid & DB & Redis
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/book?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+      username: root
+      password: root
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    database: 0
+    timeout: 2000ms
+    lettuce:
+      pool:
+        max-wait: 1ms
+        max-active: 10
+        max-idle: 8
+        min-idle: 0
+        shutdown-timeout: 100ms
