@@ -30,7 +30,7 @@ public class UserSystemServiceImpl implements UserSystemService {
 
     @Override
     public TokenResult doLogin(LoginParam loginParam){
-        String userName = loginParam.getUserName();
+        String userName = loginParam.getUsername();
         String password = loginParam.getPassword();
         User user = userMapper.getUserByUsername(userName);
 

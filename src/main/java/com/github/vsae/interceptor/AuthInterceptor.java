@@ -39,6 +39,7 @@ public class AuthInterceptor implements HandlerInterceptor {
         if (!(handler instanceof HandlerMethod)) {
             return true;
         }
+
         HandlerMethod handlerMethod = (HandlerMethod) handler;
         Method method = handlerMethod.getMethod();
 
@@ -59,6 +60,7 @@ public class AuthInterceptor implements HandlerInterceptor {
             }
         }
 
+        //this.crossDomainConfig(response);
         return true;
     }
 
