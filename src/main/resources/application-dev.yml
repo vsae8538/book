@@ -11,6 +11,11 @@ logging:
   file:
   max-size: 128MB
 
+mybatis:
+  type-aliases-package: com.github.vsae.web
+  configuration:
+    map-underscore-to-camel-case: true
+
 #Druid & DB & Redis
 spring:
   datasource:

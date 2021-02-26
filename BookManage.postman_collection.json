@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "e512eb8a-922d-496b-93b9-a01e9c2ec794",
+		"name": "BookManage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"userName\" : \"username1\",\r\n\t\"password\" : \"a123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8085/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
